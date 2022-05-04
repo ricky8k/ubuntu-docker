@@ -6,7 +6,7 @@ RUN apt-get update
 RUN apt-get install -y openssh-server
 RUN mkdir /var/run/sshd
 
-RUN useradd --user-group --create-home --system mogenius
+RUN useradd --user-group --create-home --system parallel
 
 RUN echo 'root:root' |chpasswd
 
